@@ -3,6 +3,7 @@
 "name": "YBI Translate",
 "version": "0.0.2",
 "description": "YBI Translate for Chrome",
+"options_page": "options.html",
 "icons": {
 	"16": "Little Bull-16x16.png",
 	"48": "Little Bull-48x48.png",
@@ -17,10 +18,15 @@
 "background": {
 	"scripts": ["background.js"]
  	},
+"browser_action": {
+    "default_icon": "Little Bull-16x16.png",
+    "default_popup": "options.html"
+  },
 "permissions": [
 	"contextMenus",
 	"background",
 	"tabs",
+	"storage",
 	 "http://*/*",
 	 "https://*/*"
 	],

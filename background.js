@@ -4,30 +4,32 @@
 var API = 'https://www.googleapis.com/language/translate/v2?';
 var API_KEY = "AIzaSyAkVsXAEIcnilWTDg-32iYDjhvP07tH1lc";
 
-function buildURL(selection){
-	var api_and_key = API + "key=" + API_KEY;
-	var options = "&target=en&format=text";
-	var query = "&q=" + encodeURIComponent(selection);
-	var url = api_and_key + options + query;
-	return url;
-}
-
 function translateRequest(selection) {
-	var query = buildURL(selection);
-	var xmlhttp;
-	xmlhttp=new XMLHttpRequest();
-	xmlhttp.open("GET", query, false);
-	xmlhttp.send();
-	response = JSON.parse(xmlhttp.responseText);
-	return response.data.translations[0].translatedText;
+	chrome.storage.sync.get("targetLanguage", function(stored){
+		// Build the URL
+		var apiAndKey = API + "key=" + API_KEY;
+		var options = "&format=text";
+		var query = "&q=" + encodeURIComponent(selection);
+		var target = "&target=" + stored.targetLanguage;
+		var url = apiAndKey + target + options + query;
+		// Make the request
+		var xmlhttp;
+		xmlhttp=new XMLHttpRequest();
+		xmlhttp.open("GET", url, false);
+		xmlhttp.send();
+		response = JSON.parse(xmlhttp.responseText);
+		// Show the result
+		alert(selection + ":\n\n" + response.data.translations[0].translatedText);
+	});
 }
 
 function onRequest(info, tab) {
    	var selection = info.selectionText;
-   	alert(selection + ":\n\n" + translateRequest(selection));
+	translateRequest(selection);
 };
 
-chrome.contextMenus.create({title:"Translate '%s'", contexts: ["all"], "onclick": onRequest});
+chrome.contextMenus.create({title:"Translate '%s'", contexts: ["all"],
+	"onclick": onRequest});
 
 var funcToInject = function() {
     var selection = window.getSelection();
