@@ -1,7 +1,7 @@
 {
 "manifest_version": 2, 
 "name": "YBI Translate",
-"version": "0.0.2",
+"version": "0.0.3",
 "description": "YBI Translate for Chrome",
 "options_page": "options.html",
 "icons": {

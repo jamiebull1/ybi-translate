@@ -4,7 +4,6 @@
 // Saves options to chrome.storage
 function save_options() {
   var targetLanguage = document.getElementById('target').value;
-  alert("Saving " + targetLanguage + " as default target language");
   chrome.storage.sync.set({
     "targetLanguage": targetLanguage
   }, function() {
@@ -21,13 +20,9 @@ function save_options() {
 // stored in chrome.storage.
 function restore_options() {
   chrome.storage.sync.get("targetLanguage", function(items) {
-  	alert("Restoring");
 	// Use default value targetLanguage = 'en' if none present
-  	if (!items.targetLanguage) {
-  		items.targetLanguage = "en";
-	}
+  	if (!items.targetLanguage) { items.targetLanguage = "en"; }
     document.getElementById('target').value = items.targetLanguage;
-	alert("Got " + items.targetLanguage + " from storage");
   });
 }
 document.addEventListener('DOMContentLoaded', restore_options);

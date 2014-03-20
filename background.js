@@ -48,7 +48,7 @@ chrome.commands.onCommand.addListener(function(cmd) {
             code: jsCodeStr,
             allFrames: true
         }, function(selection) {
-            alert(selection[0] + ":\n\n" + translateRequest(selection[0]));
+            translateRequest(selection[0]);
         });
     }
 });
