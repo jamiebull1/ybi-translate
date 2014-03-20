@@ -20,12 +20,14 @@ function save_options() {
 // Restores select box and checkbox state using the preferences
 // stored in chrome.storage.
 function restore_options() {
-  // Use default value targetLanguage = 'en'
   chrome.storage.sync.get("targetLanguage", function(items) {
-//  	alert("Restoring");
+  	alert("Restoring");
+	// Use default value targetLanguage = 'en' if none present
+  	if (!items.targetLanguage) {
+  		items.targetLanguage = "en";
+	}
     document.getElementById('target').value = items.targetLanguage;
-//	alert("Got " + items.targetLanguage + " from storage");
-    
+	alert("Got " + items.targetLanguage + " from storage");
   });
 }
 document.addEventListener('DOMContentLoaded', restore_options);

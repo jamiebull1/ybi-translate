@@ -10,7 +10,11 @@ function translateRequest(selection) {
 		var apiAndKey = API + "key=" + API_KEY;
 		var options = "&format=text";
 		var query = "&q=" + encodeURIComponent(selection);
-		var target = "&target=" + stored.targetLanguage;
+		var targetLanguage = stored.targetLanguage;
+		if (!targetLanguage){
+			targetLanguage = "en";
+		}
+		var target = "&target=" + targetLanguage;
 		var url = apiAndKey + target + options + query;
 		// Make the request
 		var xmlhttp;
