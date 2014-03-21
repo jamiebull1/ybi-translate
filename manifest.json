@@ -1,9 +1,9 @@
 {
 "manifest_version": 2, 
-"name": "YBI In-page Translation Assistant",
-"short_name": "ybiTranslate",
-"version": "0.0.4",
-"description": "YBI Translate for Chrome",
+"name": "__MSG_extName__",
+"short_name": "__MSG_extShortName__",
+"version": "0.0.6",
+"description": "__MSG_extDescription__",
 "options_page": "options.html",
 "icons": {
 	"16": "Little Bull-16x16.png",
@@ -28,8 +28,8 @@
 	"background",
 	"tabs",
 	"storage",
-	 "http://*/*",
-	 "https://*/*"
+	"http://*/*",
+	"https://*/*"
 	],
 "commands": {
 	"translate-selection": {
@@ -37,7 +37,7 @@
 			"windows": "Alt+T",
 			"mac": "Alt+T"
     		},
-		"description": "Translate selection"
+		"description": "__MSG_cmdTranslateSelection__"
 		}
   	}
 }

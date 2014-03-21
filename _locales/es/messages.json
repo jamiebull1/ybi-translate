@@ -1,0 +1,18 @@
+{
+"extName": {
+	"message": "Popup Traducir",
+	"description": "Extension name, max 45 chars"
+	},
+"extShortName": {
+	"message": "Traducir",
+	"description": "Extension name, max 12 chars"
+	},
+"extDescription": {
+	"message": "Herramienta de traducción en paginas de Young Bull Industries",
+	"description": "Extension description"
+	},
+"cmdTranslateSelection": {
+	"message": "Traducir la selección",
+	"description": "Command description for 'translate selection' hotkey"
+	}
+}
