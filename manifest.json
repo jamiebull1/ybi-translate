@@ -5,6 +5,7 @@
 "version": "0.0.6",
 "description": "__MSG_extDescription__",
 "options_page": "options.html",
+"default_locale": "en",
 "icons": {
 	"16": "Little Bull-16x16.png",
 	"48": "Little Bull-48x48.png",
