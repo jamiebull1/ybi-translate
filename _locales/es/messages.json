@@ -8,15 +8,23 @@
 	"description": "Extension name, max 12 chars"
 	},
 "extDescription": {
-	"message": "Herramienta de traducci\u00F3n en paginas de Young Bull Industries",
+	"message": "Una herramienta de traducci\u00F3n sencilla que ofrece una combinaci\u00F3n de teclas para traducir palabras o frases sin salir de la p\u00E1gina.",
 	"description": "Extension description"
 	},
 "extOptionsTitle": {
 	"message": "Opciones",
 	"description": "Options popup title"
 	},
+"extOptionSaved": {
+	"message": "Guardado",
+	"description": "Options saved message"
+	},
+"extSave": {
+	"message": "Guardar",
+	"description": "'Save' for save buttons"
+	},
 "extOptionsHeading": {
-	"message": "Idioma tarjeta",
+	"message": "Idioma de destino",
 	"description": "Options popup heading"
 	},
 "cmdTranslateSelection": {
@@ -232,7 +240,7 @@
 	"description": "Local name for Slovenian"
 	},
 "extLang_es": {
-	"message": "Espanol\u00F1",
+	"message": "Espa\u00F1ol",
 	"description": "Local name for Spanish"
 	},
 "extLang_sw": {

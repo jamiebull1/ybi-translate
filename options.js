@@ -4,6 +4,8 @@
 
 var title = chrome.i18n.getMessage("extOptionsTitle");
 var heading = chrome.i18n.getMessage("extOptionsHeading");
+var save = chrome.i18n.getMessage("extSave");
+var statusSaved = chrome.i18n.getMessage("extOptionSaved");
 var langs = ['af', 'sq', 'ar', 'az', 'eu', 'bn', 'be', 'bg', 'ca', 'zh_CN', 'zh_TW', 'hr', 'cs', 'da', 'nl', 'en', 'eo', 'et', 'tl', 'fi', 'fr', 'gl', 'ka', 'de', 'el', 'gu', 'ht', 'iw', 'hi', 'hu', 'is', 'id', 'ga', 'it', 'ja', 'kn', 'ko', 'la', 'lv', 'lt', 'mk', 'ms', 'mt', 'no', 'fa', 'pl', 'pt', 'ro', 'ru', 'sr', 'sk', 'sl', 'es', 'sw', 'sv', 'ta', 'te', 'th', 'tr', 'uk', 'ur', 'vi', 'cy', 'yi'];
 
 // Saves options to chrome.storage
@@ -14,7 +16,7 @@ function save_options() {
   }, function() {
     // Update status to let user know options were saved.
     var status = document.getElementById('status');
-    status.textContent = 'Options saved.';
+    status.textContent = statusSaved;
     setTimeout(function() {
       status.textContent = '';
     }, 750);
@@ -26,6 +28,8 @@ function save_options() {
 function restore_options() {
 	document.getElementById('title').textContent = title;
 	document.getElementById('heading').textContent = heading;
+	document.getElementById('save').textContent = save;
+//	document.getElementById('status').textContent = status;
 	var langsToSort = [];
 	langs.forEach(function(lang) {
 		var msg_name = "extLang_" + lang;
@@ -33,13 +37,7 @@ function restore_options() {
 		langsToSort.push([localisedLang, lang]);
 	});
 	var sortedLangs = langsToSort.sort(function(a,b) {
-//		var nameA = a[0].toLowerCase(), nameB = b[0].toLowerCase();
 		return a[0].localeCompare(b[0]);
-//		if (nameA < nameB) //sort string ascending
-//	  		return -1;
-//		if (nameA > nameB)
-//			return 1;
-//	 	return 0; //default return value (no sorting)
 	});
 	// Get rid of current contents of the select dropdown
 	document.getElementById("target").innerHTML = "";

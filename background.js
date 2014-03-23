@@ -49,6 +49,7 @@ var jsCodeStr = ';(' + funcToInject + ')();';
 
 chrome.commands.onCommand.addListener(function(cmd) {
     if (cmd === 'translate-selection') {
+    	alert("Fired hotkey");
         chrome.tabs.executeScript({
             code: jsCodeStr,
             allFrames: true
