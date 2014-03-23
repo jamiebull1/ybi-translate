@@ -26,16 +26,35 @@ function save_options() {
 function restore_options() {
 	document.getElementById('title').textContent = title;
 	document.getElementById('heading').textContent = heading;
+	var langsToSort = [];
 	langs.forEach(function(lang) {
 		var msg_name = "extLang_" + lang;
-		var localised_lang = chrome.i18n.getMessage(msg_name);
-    	document.getElementById(lang).text=localised_lang;
+		var localisedLang = chrome.i18n.getMessage(msg_name);
+		langsToSort.push([localisedLang, lang]);
 	});
-
+	var sortedLangs = langsToSort.sort(function(a,b) {
+//		var nameA = a[0].toLowerCase(), nameB = b[0].toLowerCase();
+		return a[0].localeCompare(b[0]);
+//		if (nameA < nameB) //sort string ascending
+//	  		return -1;
+//		if (nameA > nameB)
+//			return 1;
+//	 	return 0; //default return value (no sorting)
+	});
+	// Get rid of current contents of the select dropdown
+	document.getElementById("target").innerHTML = "";
+	// Set the dropdown elements
+	sortedLangs.forEach(function(lang) {
+		var x = document.getElementById("target");
+		var optn = document.createElement("OPTION");
+		optn.text = lang[0];  
+		optn.value = lang[1];  
+		x.add(optn);  
+	});
   	chrome.storage.sync.get("targetLanguage", function(items) {
-	// Use default value targetLanguage = 'en' if none present
-  	if (!items.targetLanguage) { items.targetLanguage = "en"; }
-    	document.getElementById('target').value = items.targetLanguage;
+		// Use default value targetLanguage = 'en' if none present
+	  	if (!items.targetLanguage) { items.targetLanguage = "en"; }
+		document.getElementById('target').value = items.targetLanguage;
   	});
 }
 

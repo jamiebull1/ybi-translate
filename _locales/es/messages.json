@@ -1,10 +1,10 @@
 {
 "extName": {
-	"message": "Popup Traducir",
+	"message": "Popup Traducci\u00F3n",
 	"description": "Extension name, max 45 chars"
 	},
 "extShortName": {
-	"message": "Traducir",
+	"message": "Traducci\u00F3n",
 	"description": "Extension name, max 12 chars"
 	},
 "extDescription": {
@@ -40,51 +40,51 @@
 	"description": "Local name for Azerbaijani"
 	},
 "extLang_eu": {
-	"message": "Basque",
+	"message": "Vasco",
 	"description": "Local name for Basque"
 	},
 "extLang_bn": {
-	"message": "Bengali",
+	"message": "Bengal\u00ED",
 	"description": "Local name for Bengali"
 	},
 "extLang_be": {
-	"message": "Belarusian",
+	"message": "Bielorruso",
 	"description": "Local name for Belarusian"
 	},
 "extLang_bg": {
-	"message": "Bulgarian",
+	"message": "B\u00FAlgaro",
 	"description": "Local name for Bulgarian"
 	},
 "extLang_ca": {
-	"message": "Catalan",
+	"message": "Catal\u00E1n",
 	"description": "Local name for Catalan"
 	},
 "extLang_zh_CN": {
-	"message": "Chinese Simplified",
+	"message": "Chino Simplificado",
 	"description": "Local name for Chinese Simplified"
 	},
 "extLang_zh_TW": {
-	"message": "Chinese Traditional",
+	"message": "Chino Tradicional",
 	"description": "Local name for Chinese Traditional"
 	},
 "extLang_hr": {
-	"message": "Croatian",
+	"message": "Croata",
 	"description": "Local name for Croatian"
 	},
 "extLang_cs": {
-	"message": "Czech",
+	"message": "Checo",
 	"description": "Local name for Czech"
 	},
 "extLang_da": {
-	"message": "Danish",
+	"message": "Dan\u00E9s",
 	"description": "Local name for Danish"
 	},
 "extLang_nl": {
-	"message": "Dutch",
+	"message": "Holand\u00E9s",
 	"description": "Local name for Dutch"
 	},
 "extLang_en": {
-	"message": "English",
+	"message": "Ingl\u00E9s",
 	"description": "Local name for English"
 	},
 "extLang_eo": {
@@ -92,7 +92,7 @@
 	"description": "Local name for Esperanto"
 	},
 "extLang_et": {
-	"message": "Estonian",
+	"message": "Estonia",
 	"description": "Local name for Estonian"
 	},
 "extLang_tl": {
@@ -100,27 +100,27 @@
 	"description": "Local name for Filipino"
 	},
 "extLang_fi": {
-	"message": "Finnish",
+	"message": "Finland\u00E9s",
 	"description": "Local name for Finnish"
 	},
 "extLang_fr": {
-	"message": "French",
+	"message": "Franc\u00E9s",
 	"description": "Local name for French"
 	},
 "extLang_gl": {
-	"message": "Galician",
+	"message": "Gallego",
 	"description": "Local name for Galician"
 	},
 "extLang_ka": {
-	"message": "Georgian",
+	"message": "Georgiano",
 	"description": "Local name for Georgian"
 	},
 "extLang_de": {
-	"message": "German",
+	"message": "Alem\u00E1n",
 	"description": "Local name for German"
 	},
 "extLang_el": {
-	"message": "Greek",
+	"message": "Griego",
 	"description": "Local name for Greek"
 	},
 "extLang_gu": {
@@ -128,11 +128,11 @@
 	"description": "Local name for Gujarati"
 	},
 "extLang_ht": {
-	"message": "Haitian Creole",
+	"message": "Creole Haitiano",
 	"description": "Local name for Haitian Creole"
 	},
 "extLang_iw": {
-	"message": "Hebrew",
+	"message": "Hebreo",
 	"description": "Local name for Hebrew"
 	},
 "extLang_hi": {
@@ -140,99 +140,99 @@
 	"description": "Local name for Hindi"
 	},
 "extLang_hu": {
-	"message": "Hungarian",
+	"message": "H\u00FAngaro",
 	"description": "Local name for Hungarian"
 	},
 "extLang_is": {
-	"message": "Icelandic",
+	"message": "Island\u00E9s",
 	"description": "Local name for Icelandic"
 	},
 "extLang_id": {
-	"message": "Indonesian",
+	"message": "Indonesio",
 	"description": "Local name for Indonesian"
 	},
 "extLang_ga": {
-	"message": "Irish",
+	"message": "Irland\u00E9s",
 	"description": "Local name for Irish"
 	},
 "extLang_it": {
-	"message": "Italian",
+	"message": "Italiano",
 	"description": "Local name for Italian"
 	},
 "extLang_ja": {
-	"message": "Japanese",
+	"message": "Japon\u00E9s",
 	"description": "Local name for Japanese"
 	},
 "extLang_kn": {
-	"message": "Kannada",
+	"message": "Canar\u00E9s",
 	"description": "Local name for Kannada"
 	},
 "extLang_ko": {
-	"message": "Korean",
+	"message": "Coreano",
 	"description": "Local name for Korean"
 	},
 "extLang_la": {
-	"message": "Latin",
+	"message": "Latino",
 	"description": "Local name for Latin"
 	},
 "extLang_lv": {
-	"message": "Latvian",
+	"message": "Let\u00F3n",
 	"description": "Local name for Latvian"
 	},
 "extLang_lt": {
-	"message": "Lithuanian",
+	"message": "Lituano",
 	"description": "Local name for Lithuanian"
 	},
 "extLang_mk": {
-	"message": "Macedonian",
+	"message": "Macedonio",
 	"description": "Local name for Macedonian"
 	},
 "extLang_ms": {
-	"message": "Malay",
+	"message": "Malayo",
 	"description": "Local name for Malay"
 	},
 "extLang_mt": {
-	"message": "Maltese",
+	"message": "Malt\u00E9s",
 	"description": "Local name for Maltese"
 	},
 "extLang_no": {
-	"message": "Norwegian",
+	"message": "Noruego",
 	"description": "Local name for Norwegian"
 	},
 "extLang_fa": {
-	"message": "Persian",
+	"message": "Persa",
 	"description": "Local name for Persian"
 	},
 "extLang_pl": {
-	"message": "Polish",
+	"message": "Polaco",
 	"description": "Local name for Polish"
 	},
 "extLang_pt": {
-	"message": "Portuguese",
+	"message": "Portugues",
 	"description": "Local name for Portuguese"
 	},
 "extLang_ro": {
-	"message": "Romanian",
+	"message": "Rumano",
 	"description": "Local name for Romanian"
 	},
 "extLang_ru": {
-	"message": "Russian",
+	"message": "Ruso",
 	"description": "Local name for Russian"
 	},
 "extLang_sr": {
-	"message": "Serbian",
+	"message": "Serbio",
 	"description": "Local name for Serbian"
 	},
 "extLang_sk": {
-	"message": "Slovak",
+	"message": "Eslovaco",
 	"description": "Local name for Slovak"
 	},
 "extLang_sl": {
-	"message": "Slovenian",
+	"message": "Esloveno",
 	"description": "Local name for Slovenian"
 	},
 "extLang_es": {
-	"message": "Spanish",
+	"message": "Espanol\u00F1",
 	"description": "Local name for Spanish"
 	},
 "extLang_sw": {
@@ -240,7 +240,7 @@
 	"description": "Local name for Swahili"
 	},
 "extLang_sv": {
-	"message": "Swedish",
+	"message": "Sueco",
 	"description": "Local name for Swedish"
 	},
 "extLang_ta": {
@@ -252,15 +252,15 @@
 	"description": "Local name for Telugu"
 	},
 "extLang_th": {
-	"message": "Thai",
+	"message": "Tailand\u00E9s",
 	"description": "Local name for Thai"
 	},
 "extLang_tr": {
-	"message": "Turkish",
+	"message": "Turko",
 	"description": "Local name for Turkish"
 	},
 "extLang_uk": {
-	"message": "Ukrainian",
+	"message": "Ucraniano",
 	"description": "Local name for Ukrainian"
 	},
 "extLang_ur": {
@@ -268,15 +268,15 @@
 	"description": "Local name for Urdu"
 	},
 "extLang_vi": {
-	"message": "Vietnamese",
+	"message": "Vietnamita",
 	"description": "Local name for Vietnamese"
 	},
 "extLang_cy": {
-	"message": "Welsh",
+	"message": "Gal\u00E9s",
 	"description": "Local name for Welsh"
 	},
 "extLang_yi": {
-	"message": "Yiddish",
+	"message": "Y\u00EDdish",
 	"description": "Local name for Yiddish"
 	}
 }
