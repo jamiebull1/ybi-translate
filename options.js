@@ -26,16 +26,18 @@ function save_options() {
 // Restores select box and checkbox state using the preferences
 // stored in chrome.storage.
 function restore_options() {
+	// Set the static internationalised elements
 	document.getElementById('title').textContent = title;
 	document.getElementById('heading').textContent = heading;
 	document.getElementById('save').textContent = save;
-//	document.getElementById('status').textContent = status;
+	// Handle the destination language options
 	var langsToSort = [];
 	langs.forEach(function(lang) {
 		var msg_name = "extLang_" + lang;
 		var localisedLang = chrome.i18n.getMessage(msg_name);
 		langsToSort.push([localisedLang, lang]);
 	});
+	// Sort them in an accents-sensitive way
 	var sortedLangs = langsToSort.sort(function(a,b) {
 		return a[0].localeCompare(b[0]);
 	});
@@ -49,6 +51,7 @@ function restore_options() {
 		optn.value = lang[1];  
 		x.add(optn);  
 	});
+	// Set the currently-selected language in the dropdown
   	chrome.storage.sync.get("targetLanguage", function(items) {
 		// Use default value targetLanguage = 'en' if none present
 	  	if (!items.targetLanguage) { items.targetLanguage = "en"; }

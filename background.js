@@ -49,12 +49,15 @@ var jsCodeStr = ';(' + funcToInject + ')();';
 
 chrome.commands.onCommand.addListener(function(cmd) {
     if (cmd === 'translate-selection') {
-    	alert("Fired hotkey");
         chrome.tabs.executeScript({
             code: jsCodeStr,
             allFrames: true
         }, function(selection) {
-            translateRequest(selection[0]);
+        	selection.forEach(function(frameSelectedText) {
+        		if(frameSelectedText.length > 0) {
+		            translateRequest(frameSelectedText);			
+        		}
+        	});
         });
     }
 });
